@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Study Timer</string>
+    <string name="you_spent">You spent </string>
+    <string name="on_studying_last_time"> on studying last time</string>
+    <string name="_00_00">00:00</string>
+    <string name="stop">STOP</string>
+    <string name="start">START</string>
+    <string name="pause">PAUSE</string>
+</resources>

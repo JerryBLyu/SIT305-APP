@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+    <string name="enter_your_home_rent">Enter your home rent</string>
+    <string name="add">ADD</string>
+    <string name="aud">AUD</string>
+    <string name="img">IMG</string>
+    <string name="total_spend">Total spend:</string>
+    <string-array name="types">
+        <item>Home Rent</item>
+        <item>Eating Out</item>
+        <item>Travel</item>
+        <item>Shopping</item>
+    </string-array>
+</resources>
+

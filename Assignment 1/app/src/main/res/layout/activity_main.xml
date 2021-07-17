@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtIn"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerIn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
+
+    <Spinner
+        android:id="@+id/spinnerIn"
+        android:layout_width="164dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="104dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/distancesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginBottom="15dp"
+        android:background="#005A3636"
+        android:foreground="@drawable/distance"
+        android:text="@string/distances"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="m" />
+
+    <Button
+        android:id="@+id/weightsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="15dp"
+        android:foreground="@drawable/weight"
+        android:text="@string/weights"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="m" />
+
+    <Button
+        android:id="@+id/tempBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="15dp"
+        android:foreground="@drawable/temp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weightsBtn"
+        app:layout_constraintStart_toEndOf="@+id/distancesBtn"
+        tools:targetApi="m" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIn"
+        tools:targetApi="o"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIn"
+        tools:targetApi="o"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIn"
+        tools:targetApi="o"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/value1"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="56dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:visibility="invisible"
+        android:labelFor="@id/label1"
+        android:inputType="number"
+        android:hint="@android:string/no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIn"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/value2"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:visibility="invisible"
+        android:labelFor="@id/label2"
+        android:inputType="number"
+        android:hint="@android:string/no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIn"
+        tools:targetApi="o"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/value3"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="212dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:visibility="invisible"
+        android:labelFor="@id/label3"
+        android:inputType="number"
+        android:hint="@android:string/no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIn"
+        tools:targetApi="o"
+        tools:visibility="invisible" />
+
+</android.support.constraint.ConstraintLayout>

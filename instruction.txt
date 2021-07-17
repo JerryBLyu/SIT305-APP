@@ -1,0 +1,14 @@
+Ass1: 
+1: created the layout. Set up the drop down, the three buttons and text input.
+2: Use image as buttons' foreground, created Java code for click listener.
+
+Ass2: 
+1: created the layout by list view, inited the list item and their onclick events 
+2: created the second activity and setup message passing by intent. 
+
+Ass3: 
+1: created the layout in horizontal and vertical style. Placed text and image buttons properly. week2: set up the timer and buttons' onclick event to controlled the timer. 
+2: stores and restores the timer's  value when necessary
+
+Ass4:
+1.Create a list view, click on each item to enter the details
